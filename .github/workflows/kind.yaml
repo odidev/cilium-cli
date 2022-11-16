@@ -15,7 +15,7 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || 'scheduled' }}
   cancel-in-progress: true
 
-env:
+env: 
   KIND_VERSION: v0.14.0
   KIND_CONFIG: .github/kind-config.yaml
   TIMEOUT: 2m
